@@ -1,0 +1,12 @@
+# Use config map for not-secret configuration data
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: zoo-config-map
+data:
+  GCP_PROJECT_ID: {{gcp-project-id}}
+  GCP_TOPIC_NAME: {{gcp-topic-name}}
+  GCP_TOPIC_SUBSCRIPTION_NAME: {{gcp-topic-subscription-name}}
+  ML_BRAIN_JS_ENABLED: {{ml-brain-js-enabled}}
+  ML_TENSORFLOW_TOXIC_ENABLED: {{ml-tensorflow-toxic-enabled}}

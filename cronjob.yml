@@ -1,0 +1,22 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: zoo-cron
+spec:
+  schedule: "0 1 * * *"
+  concurrencyPolicy: Replace
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          labels:
+            app: zoo
+        spec:
+          containers:
+            - name: zoo
+              image: {{image}}
+              imagePullPolicy: IfNotPresent
+              envFrom:
+                - configMapRef:
+                    name: {{config-map-ref}}
+          restartPolicy: OnFailure

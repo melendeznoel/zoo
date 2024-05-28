@@ -1,0 +1,20 @@
+{
+  "sentences": [
+    {
+      "input": "Look man, I’m just brutally honest",
+      "output": "toxic"
+    },
+    {
+      "input": "I’m sorry that you feel that way",
+      "output": "toxic"
+    },
+    {
+      "input": "Look what you made me do",
+      "output": "toxic"
+    },
+    {
+      "input": "pancake",
+      "output": "good"
+    }
+  ]
+}

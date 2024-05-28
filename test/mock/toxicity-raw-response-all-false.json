@@ -1,0 +1,88 @@
+{
+  "response": [
+    {
+      "results": [
+        {
+          "probabilities": {
+            "0": 0.956874430179596,
+            "1": 0.04312555491924286
+          },
+          "match": false
+        }
+      ],
+      "label": "identity_attack"
+    },
+    {
+      "results": [
+        {
+          "probabilities": {
+            "0": 0.044717177748680115,
+            "1": 0.9552828669548035
+          },
+          "match": false
+        }
+      ],
+      "label": "insult"
+    },
+    {
+      "results": [
+        {
+          "probabilities": {
+            "0": 0.40937095880508423,
+            "1": 0.5906291007995605
+          },
+          "match": null
+        }
+      ],
+      "label": "obscene"
+    },
+    {
+      "results": [
+        {
+          "probabilities": {
+            "0": 0.998702883720398,
+            "1": 0.0012971361866220832
+          },
+          "match": false
+        }
+      ],
+      "label": "severe_toxicity"
+    },
+    {
+      "label": "sexual_explicit",
+      "results": [
+        {
+          "match": null,
+          "probabilities": {
+            "0": 0.8797887563705444,
+            "1": 0.12021128833293915
+          }
+        }
+      ]
+    },
+    {
+      "label": "threat",
+      "results": [
+        {
+          "probabilities": {
+            "0": 0.9517907500267029,
+            "1": 0.048209261149168015
+          },
+          "match": false
+        }
+      ]
+    },
+    {
+      "results": [
+        {
+          "match": false,
+          "probabilities": {
+            "0": 0.019891386851668358,
+            "1": 0.9801085591316223
+          }
+        }
+      ],
+      "label": "toxicity"
+    }
+  ]
+}

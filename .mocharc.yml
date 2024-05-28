@@ -1,0 +1,7 @@
+color: true
+extension: ['ts']
+exit: true
+require: 'ts-node/register'
+spec:
+  - './test/**/*.spec.ts'
+timeout: 3000
